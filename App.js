@@ -6,7 +6,7 @@ const names = ["Aaran", "Aaren", "Aarez", "Aarman", "Aaron", "Aaron-James", "Aar
 
 export default function App() {
 return (
-<ScrollView style={styles.contentContainer}>
+<ScrollView contentContainerStyle={styles.container}>
   {names.map((name) => (
     <Text>{name}</Text>
   ))}
@@ -17,7 +17,7 @@ return (
 
 
 const styles = StyleSheet.create({
-  contentContainer: {
+  container: {
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
